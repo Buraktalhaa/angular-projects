@@ -1,0 +1,45 @@
+<div class="container">
+
+  <div class="mainImg">
+    <h4 appFirstDirective [bgColor]="'red'" style="color: azure;">{{images[currentPage].title}}</h4>
+    <img [src]="images[currentPage].url">
+  </div>
+
+  <nav aria-label="Page navigation example">
+    <ul class="pagination paginationUi">
+
+      <li #prevbtn class="page-item" [ngClass]="{disabled:currentPage === 0}">
+        <a (click)="currentPage = currentPage - 1" class="page-link">Previous</a>
+      </li>
+
+      @for (image of images; track $index; let i = $index) {
+        @if (pageIndex(i)) {
+          <li class="page-item" [ngClass]="currentPage === i ? 'active':'passive'">
+            <a (click)="currentPage = i" class="page-link">{{i + 1}}</a>
+          </li>
+        }
+      }
+
+
+      <li class="page-item">
+        <a class="page-link" [ngClass]="{disabled:currentPage === images.length - 1}"
+          (click)="currentPage = currentPage + 1" href="#">Next</a>
+      </li>
+
+    </ul>
+  </nav>
+
+</div>
+
+
+<!-- <div [ngSwitch]="currentPage">
+  <div *ngSwitchCase="0">
+    Ilk sayfadasin
+  </div>
+  <div *ngSwitchCase="1" >
+    Ikinci sayfasin
+  </div>
+  <div *ngSwitchDefault>
+    Ilk iki sayfada degilsin
+  </div>
+</div> -->
