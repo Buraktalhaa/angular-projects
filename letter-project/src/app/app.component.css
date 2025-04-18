@@ -1,0 +1,21 @@
+.mainArea{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 775px;
+    min-width: 1000px;
+    background-color:rgb(191, 195, 206);
+}
+
+.pending{
+    color: gray;
+}
+
+.correct{
+    color:rgb(53, 48, 151)
+}
+
+.incorrect{
+    color: red;
+    font-weight: bold;
+}
