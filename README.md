@@ -1,4 +1,4 @@
-# Angular Projects from Udemy Course
+# Angular Projects
 
 This repository contains multiple Angular projects I developed while following a Udemy course on Angular. Each folder represents a different hands-on project that helped me understand key concepts of Angular, such as components, directives, routing, services, pipes, and more.
 
