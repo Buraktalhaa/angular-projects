@@ -2,10 +2,10 @@
   <div class="container">
     <div class="columns is-centered">
       <div class="box column is-one-third">
-        <h1 class="title has-text-centered">Şifre Oluşturucu</h1>
+        <h1 class="title has-text-centered">Create Unique Password</h1>
   
         <div class="field">
-          <label>Şifre Uzunluğu</label>
+          <label>Password length</label>
           <input class="input" (change)="modifyLength($event)" />
         </div>
   
@@ -13,7 +13,7 @@
           <div class="control">
             <label class="checkbox">
               <input (change)="modifyLetters()" type="checkbox" />
-              Alfabeyi Kullan
+              Use Letters
             </label>
           </div>
         </div>
@@ -22,7 +22,7 @@
           <div class="control">
             <label class="checkbox">
               <input (change)="modifyNumbers()" type="checkbox" />
-              Sayıları Kullan
+              Use Numbers
             </label>
           </div>
         </div>
@@ -31,7 +31,7 @@
           <div class="control">
             <label class="checkbox">
               <input (change)="modifySymbols()" type="checkbox" />
-              Sembolleri Kullan
+              Use Symbols
             </label>
           </div>
         </div>
@@ -44,7 +44,7 @@
           (click)="buttonClick()"
           class="button is-link is-fullwidth"
         >
-         Oluştur
+         Create unique password
         </button>
   
         <div class="box" *ngIf="password">

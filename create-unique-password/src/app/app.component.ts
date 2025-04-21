@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -12,8 +11,8 @@ import { RouterOutlet } from '@angular/router';
 export class AppComponent {
   title = 'password';
   password = ''
-
   length: number = 0;
+
   includeLetters: boolean = false;
   includeNumbers: boolean = false;
   includeSymbols: boolean = false;
