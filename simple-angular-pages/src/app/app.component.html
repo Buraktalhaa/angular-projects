@@ -21,9 +21,8 @@
       }
 
 
-      <li class="page-item">
-        <a class="page-link" [ngClass]="{disabled:currentPage === images.length - 1}"
-          (click)="currentPage = currentPage + 1" href="#">Next</a>
+      <li class="page-item" [ngClass]="{disabled:currentPage === images.length - 1}">
+        <a class="page-link" (click)="nextPage()">Next</a>
       </li>
 
     </ul>
@@ -31,15 +30,3 @@
 
 </div>
 
-
-<!-- <div [ngSwitch]="currentPage">
-  <div *ngSwitchCase="0">
-    Ilk sayfadasin
-  </div>
-  <div *ngSwitchCase="1" >
-    Ikinci sayfasin
-  </div>
-  <div *ngSwitchDefault>
-    Ilk iki sayfada degilsin
-  </div>
-</div> -->
