@@ -1,6 +1,6 @@
 <div class="main">
-
-  <div *ngFor="let post of posts">
+  @for(post of posts;track post){
+  <div>
     <app-card
       [title]="post.title"
       [imageUrl]="post.imageUrl"
@@ -9,10 +9,11 @@
       [content]="post.content"
       [label1]="post.label1"
       [label2]="post.label2"
-      [label3]="post.label3">
+      [label3]="post.label3"
+    >
     </app-card>
   </div>
-  
+  }
 
   <!-- <app-card [title]="posts[0].title" 
     [imageUrl]="posts[0].imageUrl" 

@@ -1,12 +1,10 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
 import { CardComponent } from './card/card.component';
-import { NgFor } from '@angular/common'; 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [NgFor, CardComponent],
+  imports: [CardComponent],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
@@ -15,7 +13,7 @@ export class AppComponent {
     {
       title:'Rivendell',
       imageUrl: 'assets/rivendell.webp',
-      iconUrl:'assets/rivendellSymbol.webp',
+      iconUrl:'assets/rivendellSymbol.jpg',
       subtitle: '@burak',
       content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Error cupiditate aut natus est, dicta ipsam expedita quibusdam ipsum alias, commodi eius? Quos, repellat quis ducimus nesciunt voluptatibus ipsam! Nisi, nesciunt.',
       label1: '#full-stack',
